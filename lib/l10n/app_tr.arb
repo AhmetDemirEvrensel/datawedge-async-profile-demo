@@ -1,0 +1,98 @@
+{
+  "@@locale": "tr",
+  "appTitle": "Asenkron Profil Hazırlık Demosu",
+  "heroEyebrow": "ASENKRON HAZIRLIK LABORATUVARI",
+  "heroTitle": "Future'ın tamamlanması, harici sistemin hazır olduğu anlamına gelmez.",
+  "heroDescription": "İki yaklaşımı aynı simülasyon gecikmesiyle çalıştırın ve zaman çizelgelerinin nasıl ayrıştığını görün.",
+  "simulationNotice": "Bu uygulama Zebra DataWedge'e bağlanmaz. Daha genel bir asenkron entegrasyon problemini kontrollü biçimde simüle eder: komutun alındığı bilgisi, harici sistem hazır olmadan gelebilir.",
+  "chooseActivationDelay": "Aktivasyon gecikmesini seçin",
+  "scenarioFast": "200 ms",
+  "scenarioTypical": "1500 ms",
+  "scenarioBoundary": "5000 ms",
+  "scenarioNever": "Hiç aktifleşmesin",
+  "scenarioFastDescription": "Profil ilk sorgudan önce aktifleşir.",
+  "scenarioTypicalDescription": "İlk sorgu profili bulamaz; sonraki sorgu başarılı olur.",
+  "scenarioBoundaryDescription": "Aktivasyon tam doğrulama süresi sınırında gerçekleşir.",
+  "scenarioNeverDescription": "Aktivasyon olayı hiçbir zaman üretilmez.",
+  "policyCommandFuture": "Komut Future'ı",
+  "policyPollInterval": "Sorgu aralığı",
+  "policyMaxAttempts": "Maksimum deneme",
+  "policyTimeout": "Zaman aşımı",
+  "simulationRunning": "Simülasyon çalışıyor…",
+  "runSimulation": "Simülasyonu başlat",
+  "reset": "Sıfırla",
+  "approachA": "Yaklaşım A",
+  "approachATitle": "Future tamamlanınca hazır olduğunu varsay",
+  "approachADescription": "Future tamamlandığında durur ve harici sistemin durumunu hiç kontrol etmez.",
+  "approachB": "Yaklaşım B",
+  "approachBTitle": "Gözlemlenebilir durumu doğrula",
+  "approachBDescription": "Aktif profili sınırlı sayıda sorgu ve kesin bir süre sınırıyla kontrol eder.",
+  "statusCommandDispatched": "Komut gönderildi",
+  "statusFutureCompleted": "Future tamamlandı",
+  "statusReadinessAssumed": "Hazır olduğu varsayıldı",
+  "statusServiceProfileActive": "Simülasyon servisinde profil aktif",
+  "statusActivationVerified": "Aktivasyon doğrulandı",
+  "statusVerificationFailed": "Doğrulama başarısız / zaman aşımı",
+  "statusWaiting": "Bekliyor",
+  "statusYes": "Evet",
+  "statusNo": "Hayır",
+  "statusNotChecked": "Kontrol edilmedi",
+  "statusNotObserved": "Gözlemlenmedi",
+  "measurementAssumedAt": "Hazır varsayılan an",
+  "measurementProfileAtAssumption": "O anda profil aktif mi?",
+  "measurementServiceActivation": "Simülasyon servisindeki aktivasyon",
+  "measurementVerificationAt": "Aktivasyonun doğrulandığı an",
+  "measurementVerificationAttempt": "Başarılı sorgulama denemesi",
+  "measurementTimeoutAt": "Zaman aşımının bildirildiği an",
+  "millisecondsValue": "{milliseconds} ms",
+  "@millisecondsValue": {
+    "placeholders": {
+      "milliseconds": { "type": "int" }
+    }
+  },
+  "attemptValue": "{attempt}. deneme / {maxAttempts}",
+  "@attemptValue": {
+    "placeholders": {
+      "attempt": { "type": "int" },
+      "maxAttempts": { "type": "int" }
+    }
+  },
+  "valuePending": "Bekleniyor",
+  "valueEmpty": "—",
+  "outcomeIdle": "Bu yaklaşımı görmek için karşılaştırmayı başlatın.",
+  "outcomeAssumedAfterActivation": "Sonuç: Simüle edilen profil zaten aktifken hazır varsayımı yapıldı; ancak Yaklaşım A bunu yine de doğrulamadı.",
+  "outcomeAssumedInactive": "Sonuç: Profil henüz aktif değilken hazır varsayımı yapıldı.",
+  "outcomeVerifying": "Aktif profil sorgulanıyor… {count} deneme tamamlandı.",
+  "@outcomeVerifying": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "outcomeVerified": "Hazır durumu yalnızca aktif profil eşleştikten sonra bildirildi.",
+  "outcomeFailed": "Sınırlı doğrulama politikası içinde hazır durumu gözlemlenemedi.",
+  "timelineTitle": "Canlı zaman çizelgesi",
+  "timelineStopwatchDescription": "Her zaman damgası bu çalıştırmada kullanılan Stopwatch üzerinden ölçülür.",
+  "timelineEmpty": "Henüz olay yok. Bir gecikme seçip karşılaştırmayı başlatın.",
+  "timelineCommandDispatched": "createProfile komutu gönderildi.",
+  "timelineFutureCompleted": "Komut Future'ı tamamlandı.",
+  "timelineReadinessAssumed": "Yaklaşım A, doğrulama yapmadan profilin hazır olduğunu varsaydı.",
+  "timelineVerificationStarted": "Yaklaşım B, hazır olma durumunu doğrulamaya başladı.",
+  "timelinePollingAttempt": "Aktif profil sorgulandı (deneme {attempt}/{maxAttempts}).",
+  "@timelinePollingAttempt": {
+    "placeholders": {
+      "attempt": { "type": "int" },
+      "maxAttempts": { "type": "int" }
+    }
+  },
+  "timelineActivationVerified": "Aktivasyon {count} sorgudan sonra doğrulandı.",
+  "@timelineActivationVerified": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "timelineVerificationFailed": "Doğrulama başarısız: zaman aşımı veya maksimum deneme sayısına ulaşıldı.",
+  "timelineProfileActivated": "Simüle edilen serviste profil aktifleşti.",
+  "boundaryTitle": "Sınır kuralı",
+  "boundaryDescription": "Doğrulayıcı tam 5000 ms'de zaman aşımı kararı vermeden önce son profil sorgusunu yapar. Bu nedenle tam süre sınırında planlanan aktivasyon kabul edilir; sınırdan sonraki aktivasyon kabul edilmez.",
+  "languageSelectorLabel": "Dil"
+}

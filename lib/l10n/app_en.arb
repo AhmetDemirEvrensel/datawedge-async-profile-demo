@@ -1,0 +1,98 @@
+{
+  "@@locale": "en",
+  "appTitle": "Async Profile Readiness Demo",
+  "heroEyebrow": "ASYNC READINESS LAB",
+  "heroTitle": "A completed Future is not the same as a ready external system.",
+  "heroDescription": "Run both approaches under the exact same simulated activation delay and watch their timelines diverge.",
+  "simulationNotice": "This app does not connect to Zebra DataWedge. It is a controlled simulation of a broader async integration problem: command acknowledgement can arrive before external readiness.",
+  "chooseActivationDelay": "Choose an activation delay",
+  "scenarioFast": "200 ms",
+  "scenarioTypical": "1500 ms",
+  "scenarioBoundary": "5000 ms",
+  "scenarioNever": "Never activates",
+  "scenarioFastDescription": "The profile activates before the first poll.",
+  "scenarioTypicalDescription": "The first poll misses it; a later poll succeeds.",
+  "scenarioBoundaryDescription": "Activation lands exactly on the verification deadline.",
+  "scenarioNeverDescription": "No activation event is produced.",
+  "policyCommandFuture": "Command Future",
+  "policyPollInterval": "Poll interval",
+  "policyMaxAttempts": "Max attempts",
+  "policyTimeout": "Timeout",
+  "simulationRunning": "Simulation running…",
+  "runSimulation": "Run simulation",
+  "reset": "Reset",
+  "approachA": "Approach A",
+  "approachATitle": "Assume the Future means ready",
+  "approachADescription": "Stops at Future completion and never checks the external state.",
+  "approachB": "Approach B",
+  "approachBTitle": "Verify the observable state",
+  "approachBDescription": "Polls the active profile with bounded attempts and a hard deadline.",
+  "statusCommandDispatched": "Command dispatched",
+  "statusFutureCompleted": "Future completed",
+  "statusReadinessAssumed": "Readiness assumed",
+  "statusServiceProfileActive": "Simulated service profile active",
+  "statusActivationVerified": "Activation verified",
+  "statusVerificationFailed": "Verification failed / timeout",
+  "statusWaiting": "Waiting",
+  "statusYes": "Yes",
+  "statusNo": "No",
+  "statusNotChecked": "Not checked",
+  "statusNotObserved": "Not observed",
+  "measurementAssumedAt": "Ready assumed at",
+  "measurementProfileAtAssumption": "Profile active at that moment",
+  "measurementServiceActivation": "Simulated service activation",
+  "measurementVerificationAt": "Activation verified at",
+  "measurementVerificationAttempt": "Successful polling attempt",
+  "measurementTimeoutAt": "Timeout reported at",
+  "millisecondsValue": "{milliseconds} ms",
+  "@millisecondsValue": {
+    "placeholders": {
+      "milliseconds": { "type": "int" }
+    }
+  },
+  "attemptValue": "Attempt {attempt} of {maxAttempts}",
+  "@attemptValue": {
+    "placeholders": {
+      "attempt": { "type": "int" },
+      "maxAttempts": { "type": "int" }
+    }
+  },
+  "valuePending": "Pending",
+  "valueEmpty": "—",
+  "outcomeIdle": "Run the comparison to see this approach.",
+  "outcomeAssumedAfterActivation": "Result: readiness was assumed after the simulated profile was already active, but Approach A still did not verify it.",
+  "outcomeAssumedInactive": "Result: readiness was assumed while the profile was still inactive.",
+  "outcomeVerifying": "Polling active profile… {count} completed.",
+  "@outcomeVerifying": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "outcomeVerified": "Ready was declared only after the active profile matched.",
+  "outcomeFailed": "Readiness was not observed within the bounded policy.",
+  "timelineTitle": "Live timeline",
+  "timelineStopwatchDescription": "Every timestamp comes from the Stopwatch used by this run.",
+  "timelineEmpty": "No events yet. Pick a delay and run the comparison.",
+  "timelineCommandDispatched": "createProfile command dispatched.",
+  "timelineFutureCompleted": "Command Future completed.",
+  "timelineReadinessAssumed": "Approach A assumed the profile was ready without verification.",
+  "timelineVerificationStarted": "Approach B started readiness verification.",
+  "timelinePollingAttempt": "Active profile queried (attempt {attempt}/{maxAttempts}).",
+  "@timelinePollingAttempt": {
+    "placeholders": {
+      "attempt": { "type": "int" },
+      "maxAttempts": { "type": "int" }
+    }
+  },
+  "timelineActivationVerified": "Activation verified after {count} poll(s).",
+  "@timelineActivationVerified": {
+    "placeholders": {
+      "count": { "type": "int" }
+    }
+  },
+  "timelineVerificationFailed": "Verification failed: timeout or maximum attempts reached.",
+  "timelineProfileActivated": "The profile became active in the simulated service.",
+  "boundaryTitle": "Boundary rule",
+  "boundaryDescription": "At exactly 5000 ms, the verifier performs its final profile query before declaring a timeout. Activation scheduled on the deadline is therefore accepted; activation after the deadline is not.",
+  "languageSelectorLabel": "Language"
+}

@@ -1,0 +1,15 @@
+flowchart LR
+    subgraph A[Approach A - assumption]
+        A1[Dispatch command] --> A2[Future completes]
+        A2 --> A3[Declare ready]
+        A3 -. no state check .-> A4[Profile may still be inactive]
+    end
+
+    subgraph B[Approach B - verification]
+        B1[Dispatch command] --> B2[Future completes]
+        B2 --> B3[Poll active profile]
+        B3 -->|match| B4[Activation verified]
+        B3 -->|no match| B5{Attempts and deadline left?}
+        B5 -->|yes| B3
+        B5 -->|no| B6[Verification failed]
+    end
