@@ -64,4 +64,4 @@ sunmaz.
 
 ## Medium makalesi
 
-Makale bağlantısı: **Yakında eklenecek**
+**[Medium yazısını oku](https://medium.com/@ahmetdemirevrensel01/flutterda-await-tamamland%C4%B1-datawedge-profili-neden-h%C3%A2l%C3%A2-aktif-de%C4%9Fildi-9d447600b692)**
