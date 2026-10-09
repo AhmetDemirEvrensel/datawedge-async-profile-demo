@@ -192,9 +192,7 @@ B performs all five polls and reports a timeout at the verification deadline.
 
 ## Related Medium article
 
-Article link: **Coming soon**
-
-Replace this placeholder with the published Medium URL after the article is live.
+**[Read the Medium article (Turkish)](https://medium.com/@ahmetdemirevrensel01/flutterda-await-tamamland%C4%B1-datawedge-profili-neden-h%C3%A2l%C3%A2-aktif-de%C4%9Fildi-9d447600b692)**
 
 ## Technical boundary
 
