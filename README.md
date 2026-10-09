@@ -2,6 +2,8 @@
 
 [Türkçe açıklama](README_TR.md)
 
+**[Open the live demo](https://ahmetdemirevrensel.github.io/datawedge-async-profile-demo/)**
+
 A small Flutter app that compares two ways of handling an asynchronous command:
 
 - **Approach A:** treat a completed `Future` as proof that the external system is ready.

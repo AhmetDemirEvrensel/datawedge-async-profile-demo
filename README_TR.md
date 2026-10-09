@@ -2,6 +2,8 @@
 
 [English README](README.md)
 
+**[Canlı demoyu aç](https://ahmetdemirevrensel.github.io/datawedge-async-profile-demo/)**
+
 Bu bağımsız Flutter demosu, bir asenkron komutun `Future` sonucunun tamamlanması
 ile harici sistemin gerçekten hazır olması arasındaki farkı gösterir.
 
