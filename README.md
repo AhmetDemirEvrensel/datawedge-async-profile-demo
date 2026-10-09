@@ -174,17 +174,19 @@ The standalone Mermaid source is available at [`docs/flow-comparison.mmd`](docs/
 
 ## Demo screenshots
 
-Place exported screenshots in [`docs/screenshots`](docs/screenshots). Recommended captures:
+### 1500 ms activation
 
-1. `1500ms-comparison-tr.png` — both result cards, measured activation and
-   verification times, and the critical timeline events.
-2. `never-activates-timeout-tr.png` — Approach A's early assumption, Approach
-   B's timeout, and all polling attempts.
+Approach A assumes readiness before activation. Approach B waits until the
+second poll observes the active profile.
 
-Use a wide browser viewport so both approach cards and their measurement panels
-appear side by side. Reset before each capture, or select the next scenario and
-confirm that the timeline is empty before starting it. The layout also adapts
-to narrow mobile screens.
+![1500 ms activation comparison in the Turkish interface](docs/screenshots/1500ms-comparison-tr.png)
+
+### Profile never activates
+
+Approach A still assumes readiness when the command Future completes. Approach
+B performs all five polls and reports a timeout at the verification deadline.
+
+![Never-activates timeout comparison in the Turkish interface](docs/screenshots/never-activates-timeout-tr.png)
 
 ## Related Medium article
 

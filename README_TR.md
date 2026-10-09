@@ -38,10 +38,20 @@ flutter build web
 
 ## Demo ekran görüntüleri
 
-Türkçe arayüz için önerilen çıktılar:
+### 1500 ms aktivasyon
 
-- `docs/screenshots/1500ms-comparison-tr.png`
-- `docs/screenshots/never-activates-timeout-tr.png`
+Yaklaşım A profil aktifleşmeden hazır varsayımı yapar. Yaklaşım B ise ikinci
+sorguda aktif profili gözlemleyerek doğrulama yapar.
+
+![Türkçe arayüzde 1500 ms aktivasyon karşılaştırması](docs/screenshots/1500ms-comparison-tr.png)
+
+### Profil hiç aktifleşmez
+
+Yaklaşım A komut Future'ı tamamlandığında yine hazır varsayımı yapar. Yaklaşım
+B beş sorgunun tamamını çalıştırır ve doğrulama süresi sonunda zaman aşımı
+bildirir.
+
+![Türkçe arayüzde hiç aktifleşmeme ve zaman aşımı karşılaştırması](docs/screenshots/never-activates-timeout-tr.png)
 
 ## Teknik sınır
 
